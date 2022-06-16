@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://lumii.lv/ontologies/MiniUniv.owl#"
+     xml:base="http://lumii.lv/ontologies/MiniUniv.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://lumii.lv/ontologies/MiniUniv.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+        <owl:inverseOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#teaches"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#takes -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#takes">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#teaches">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#courseName -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#courseName">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#personID -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#personID">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#person_name -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#person_name">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#AcademicProgram -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#AcademicProgram"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Assistant -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Assistant">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Teacher"/>
+        <owl:disjointWith rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#CompletedRegistration -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#CompletedRegistration"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Course -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#FacultyLevel -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#FacultyLevel"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+        <owl:disjointWith rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Nationality -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Nationality"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Person -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Professor -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Professor">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Teacher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Registration -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Registration"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Student -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/MiniUniv.owl#Teacher -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Teacher">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Assistant"/>
+                    <rdf:Description rdf:about="http://lumii.lv/ontologies/MiniUniv.owl#Professor"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/MiniUniv.owl#Person"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.0.1) http://owlapi.sourceforge.net -->
+
