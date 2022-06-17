@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:OptionalCourse" "base:Person" "base:Assistant" "base:Course" "base:MandatoryCourse" "base:Student" "base:Professor" "base:Teacher" ; /*classes style*/
+	"base:MandatoryCourse" -> "base:Course" [ label = "rdfs:subClassOf" ];
+	"base:Teacher" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Professor" -> "base:Teacher" [ label = "rdfs:subClassOf" ];
+	"base:OptionalCourse" -> "base:Course" [ label = "rdfs:subClassOf" ];
+	"base:Assistant" -> "base:Teacher" [ label = "rdfs:subClassOf" ];
+	"base:Student" -> "base:Person" [ label = "rdfs:subClassOf" ];
+
+}

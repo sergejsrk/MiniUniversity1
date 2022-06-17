@@ -1,0 +1,116 @@
+<http://lumii.lv/ontologies/MiniUniv.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy
+<http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://lumii.lv/ontologies/MiniUniv.owl#teaches> .
+<http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+<http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#takes
+<http://lumii.lv/ontologies/MiniUniv.owl#takes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#takes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Student> .
+<http://lumii.lv/ontologies/MiniUniv.owl#takes> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#teaches
+<http://lumii.lv/ontologies/MiniUniv.owl#teaches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#teaches> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+<http://lumii.lv/ontologies/MiniUniv.owl#teaches> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#courseName
+<http://lumii.lv/ontologies/MiniUniv.owl#courseName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#courseName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+<http://lumii.lv/ontologies/MiniUniv.owl#courseName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#personID
+<http://lumii.lv/ontologies/MiniUniv.owl#personID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#personID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+<http://lumii.lv/ontologies/MiniUniv.owl#personID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#person_name
+<http://lumii.lv/ontologies/MiniUniv.owl#person_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/MiniUniv.owl#person_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+<http://lumii.lv/ontologies/MiniUniv.owl#person_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#AcademicProgram
+<http://lumii.lv/ontologies/MiniUniv.owl#AcademicProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Assistant
+<http://lumii.lv/ontologies/MiniUniv.owl#Assistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Assistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Teacher> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Assistant> <http://www.w3.org/2002/07/owl#disjointWith> <http://lumii.lv/ontologies/MiniUniv.owl#Professor> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#CompletedRegistration
+<http://lumii.lv/ontologies/MiniUniv.owl#CompletedRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Course
+<http://lumii.lv/ontologies/MiniUniv.owl#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#FacultyLevel
+<http://lumii.lv/ontologies/MiniUniv.owl#FacultyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse
+<http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+<http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse> <http://www.w3.org/2002/07/owl#disjointWith> <http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Nationality
+<http://lumii.lv/ontologies/MiniUniv.owl#Nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse
+<http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Course> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Person
+<http://lumii.lv/ontologies/MiniUniv.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Professor
+<http://lumii.lv/ontologies/MiniUniv.owl#Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Professor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Teacher> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Registration
+<http://lumii.lv/ontologies/MiniUniv.owl#Registration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Student
+<http://lumii.lv/ontologies/MiniUniv.owl#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+# 
+# http://lumii.lv/ontologies/MiniUniv.owl#Teacher
+<http://lumii.lv/ontologies/MiniUniv.owl#Teacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Teacher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/MiniUniv.owl#Professor> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/MiniUniv.owl#Assistant> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/MiniUniv.owl#Teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/MiniUniv.owl#Person> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

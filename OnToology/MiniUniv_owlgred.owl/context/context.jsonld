@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "teaches" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#teaches",
+      "@type" : "@id"
+    },
+    "Professor" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Professor"
+    },
+    "Course" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Course"
+    },
+    "Teacher" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Teacher"
+    },
+    "CompletedRegistration" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#CompletedRegistration"
+    },
+    "takes" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#takes",
+      "@type" : "@id"
+    },
+    "Assistant" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Assistant"
+    },
+    "Nationality" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Nationality"
+    },
+    "Person" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Person"
+    },
+    "MandatoryCourse" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#MandatoryCourse"
+    },
+    "courseName" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#courseName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "person_name" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#person_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OptionalCourse" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#OptionalCourse"
+    },
+    "AcademicProgram" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#AcademicProgram"
+    },
+    "FacultyLevel" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#FacultyLevel"
+    },
+    "personID" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#personID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Registration" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Registration"
+    },
+    "Student" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#Student"
+    },
+    "isTaughtBy" : {
+      "@id" : "http://lumii.lv/ontologies/MiniUniv.owl#isTaughtBy",
+      "@type" : "@id"
+    }
+  }
+}

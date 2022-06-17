@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:OptionalCourse" "base:Person" "base:Assistant" "a803bc4:1816ecaf0c4:-7ffc" "base:Course" "base:MandatoryCourse" "base:Student" "base:Professor" "base:Teacher" ; /*classes style*/
+	"base:Teacher" -> "a803bc4:1816ecaf0c4:-7ffc" [ label = "owl:equivalentClass" ];
+	"base:MandatoryCourse" -> "base:OptionalCourse" [ label = "owl:disjointWith" ];
+	"base:Assistant" -> "base:Professor" [ label = "owl:disjointWith" ];
+	"NULL" -> "a803bc4:1816ecaf0c4:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "base:Assistant" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:Professor" [ label = "rdf:first" ];
+	"NULL" -> "a803bc4:1816ecaf0c4:-7ffb" [ label = "owl:unionOf" ];
+	"base:Person" -> "xsd:string" [ label = "base:person_name" ];
+	"base:Person" -> "base:Course" [ label = "base:teaches" ];
+	"base:Course" -> "base:Person" [ label = "base:isTaughtBy" ];
+	"base:Person" -> "xsd:string" [ label = "base:personID" ];
+	"base:Student" -> "base:Course" [ label = "base:takes" ];
+	"base:Course" -> "xsd:string" [ label = "base:courseName" ];
+
+}
